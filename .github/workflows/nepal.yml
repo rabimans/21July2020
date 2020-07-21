@@ -7,12 +7,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - name: copy file ssh privatekey
+    - name: copy file ssh privatekeys
       uses: garygrossgarten/github-action-scp@release
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
         port: ${{ secrets.PORT }}
         password: ${{ secrets.SSH_KEY }}
-        local: home/zombie/rabi/test.xml
+        local: home/zombie/project/19July2020/21July2020/thingsboard/application
         remote: home/rabi
