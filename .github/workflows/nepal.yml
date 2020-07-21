@@ -14,5 +14,5 @@ jobs:
         username: ${{ secrets.USERNAME }}
         port: ${{ secrets.PORT }}
         password: ${{ secrets.SSH_KEY }}
-        local: /home/zombie/rabi/test.xml
-        remote: /home/rabi
+        local: home/zombie/rabi/test.xml
+        remote: home/rabi
