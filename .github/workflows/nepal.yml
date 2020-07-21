@@ -13,6 +13,6 @@ jobs:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
         port: ${{ secrets.PORT }}
-        key: ${{ secrets.PRIVATEKEY }}
+        key: ${{ secrets.PASSWORD }}
         local: "home/zombie/rabi/test.xml"
         remote: "home/rabi"
