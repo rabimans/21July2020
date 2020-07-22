@@ -21,7 +21,7 @@ jobs:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.SSH_KEY}}
       - name: Copy single file to remote
-        uses: garygrossgarten/github-action-scp@release
+        uses: garygrossgarten/github-action-scp@release/0.2.0
         with:
           local: test/oof.txt
           remote: home/rabi
