@@ -15,4 +15,4 @@ jobs:
         port: ${{ secrets.PORT }}
         key: ${{ secrets.KEY }}
         source: "/home/zombie/project/19July2020/21July2020/thingsboard/test.txt"
-        target: "home/rabi"
+        target: "/home/rabi"
