@@ -8,11 +8,10 @@ jobs:
     steps:
     - name: SCP file transfer
       uses: ./
-      env:
+      with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
         port: ${{ secrets.PORT }}
         key: ${{ secrets.KEY }}
-      with:
         source: home/zombie/project/19July2020/21July2020/thingsboard/test.txt/
         target: "/home/rabi/"
