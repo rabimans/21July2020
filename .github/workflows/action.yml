@@ -14,4 +14,4 @@ jobs:
         port: ${{ secrets.PORT }}
         key: ${{ secrets.KEY }}
         source: ~/project/19July2020/21July2020/thingsboard/test.txt
-        target: /home
+        target: ~/rabi
