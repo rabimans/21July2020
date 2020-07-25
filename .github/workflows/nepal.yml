@@ -8,10 +8,11 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - uses: appleboy/scp-action@master
-      with:
+      env:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
         port: ${{ secrets.PORT }}
         key: ${{ secrets.KEY }}
+      with:
         source: home/zombie/project/19July2020/21July2020/thingsboard/test.txt/
         target: "/home/rabi/"
