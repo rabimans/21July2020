@@ -1,4 +1,4 @@
-name: Java CI
+name: SCP
 on: [push]
 jobs:
 
@@ -14,5 +14,5 @@ jobs:
         username: ${{ secrets.USERNAME }}
         port: ${{ secrets.PORT }}
         key: ${{ secrets.KEY }}
-        source: "./home/zombie/project/19July2020/21July2020/thingsboard/test.txt"
+        source: "/home/zombie/project/19July2020/21July2020/thingsboard/test.txt"
         target: "/home/rabi"
